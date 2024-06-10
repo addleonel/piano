@@ -1,0 +1,10 @@
+[Unit]
+Description=Piano
+
+[Service]
+Type=simple
+ExecStart=/path/to/your/run_script.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
