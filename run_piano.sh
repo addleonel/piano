@@ -1,2 +1,2 @@
 #!/bin/bash
-python /path/to/your/run.py
+python /path/to/your/runv1.py
