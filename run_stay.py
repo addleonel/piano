@@ -1,6 +1,6 @@
 import pygame
 from pynput import keyboard
-from sound_list import sounds
+from sound_list_stay import sounds
 
 # Initialize pygame mixer
 pygame.mixer.init()
@@ -13,7 +13,7 @@ def play_sound(key):
     try:
         sound = pygame.mixer.Sound(sounds[key])
         sound.play()
-        print(key)
+        print(f"{key} - {sounds[key]}")
     except KeyError:
         print(f"No sound mapped to key: {key}")
     except Exception as e:
